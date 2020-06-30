@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Encyclopedie</string>
+    <string name="surface" ><font fgcolor='#FF2092ED'>Surface :</font></string>
+</resources>

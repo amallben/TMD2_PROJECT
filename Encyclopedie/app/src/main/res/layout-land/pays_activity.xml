@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureAllChildren="true"
+    android:background="#45F4F9FB"
+    tools:context="com.example.encyclopedie.PaysActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:background="@drawable/corners">
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Algeria"
+                    android:textSize="28dp"
+                    android:textColor="#DFE6EC"
+                    app:layout_constraintEnd_toEndOf="parent" />
+                <ImageButton
+                    android:id="@+id/sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="400dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/hymne"
+                    />
+                <ImageButton
+                    android:id="@+id/pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="400dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/pause"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:foregroundGravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_launcher_background"
+                    />
+
+            </LinearLayout>
+            <ViewFlipper
+                android:id="@+id/slideshow"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:id="@+id/descreption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="0"
+                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <TextView
+                android:id="@+id/surface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Surface:"
+                android:textSize="16sp"
+                android:textColor="#F8306093"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Population:"
+                android:textSize="16sp"
+                android:textColor="#F8306093"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/historique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Historique: Date - Description"
+                android:textSize="16sp"
+                android:textColor="#F8306093"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <ListView
+                android:id="@+id/histo"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_below="@+id/button1"
+                android:layout_margin="7dp"
+                android:gravity="right"
+                android:background="@drawable/corners2"/>
+            <TextView
+                android:id="@+id/Ressource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Ressources:"
+                android:textSize="16sp"
+                android:textColor="#F8306093"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <ListView
+                android:id="@+id/reso"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_below="@+id/button1"
+                android:layout_margin="7dp"
+                android:layout_marginTop="0dp"
+                android:gravity="right"
+                android:background="@drawable/corners2"
+                />
+            <TextView
+                android:id="@+id/Personalite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Personalités:"
+                android:textSize="16sp"
+                android:textColor="#F8306093"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <ListView
+                android:id="@+id/perso"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_below="@+id/button1"
+                android:layout_margin="7dp"
+                android:gravity="right"
+                android:background="@drawable/corners2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal"
+                android:background="@drawable/corners">
+
+                <ImageButton
+                    android:id="@+id/youtubebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="250dp"
+                    android:background="@drawable/rectangle"
+                    android:src="@drawable/youtube"
+                    />
+                <ImageButton
+                    android:id="@+id/videobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rectangle"
+                    android:src="@drawable/video"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
